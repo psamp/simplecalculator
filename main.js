@@ -5,7 +5,7 @@ var subtractionBtn = document.getElementById("subtractionBtn");
 var multiplicationBtn = document.getElementById("multiplicationBtn");
 var divisionBtn = document.getElementById("divisionBtn");
 var answer = document.getElementById("answer");
-
+ 
 function add() {
   var numOne = Number(inputOne.value);
   var numTwo = Number(inputTwo.value);
@@ -14,7 +14,7 @@ function add() {
 }
 
 function subtract() {
-  var numOne = Numgber(inputOne.value);
+  var numOne = Number(inputOne.value);
   var numTwo = Number(inputTwo.value);
   var sum = numOne - numTwo;
   answer.innerHTML = sum.toString();
