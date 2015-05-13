@@ -1,6 +1,9 @@
 var inputOne = document.getElementById("num_one");
 var inputTwo = document.getElementById("num_two");
-var calculateBtn = document.getElementById("calculateBtn");
+var additionBtn = document.getElementById("additionBtn");
+var subtractionBtn = document.getElementById("subtractionBtn");
+var multiplicationBtn = document.getElementById("multiplicationBtn");
+var divisionBtn = document.getElementById("divisionBtn");
 var answer = document.getElementById("answer");
 
 function add() {
@@ -10,4 +13,28 @@ function add() {
   answer.innerHTML = sum.toString();
 }
 
-calculateBtn.addEventListener("click", add);
+function subtract() {
+  var numOne = Number(inputOne.value);
+  var numTwo = Number(inputTwo.value);
+  var sum = numOne - numTwo;
+  answer.innerHTML = sum.toString();
+}
+
+function multiply() {
+  var numOne = Number(inputOne.value);
+  var numTwo = Number(inputTwo.value);
+  var sum = numOne * numTwo;
+  answer.innerHTML = sum.toString();
+}
+
+function divide() {
+  var numOne = Number(inputOne.value);
+  var numTwo = Number(inputTwo.value);
+  var sum = numOne / numTwo;
+  answer.innerHTML = sum.toString();
+}
+
+additionBtn.addEventListener("click", add);
+subtractionBtn.addEventListener("click", subtract);
+multiplicationBtn.addEventListener("click", multiply);
+divisionBtn.addEventListener("click", divide);
