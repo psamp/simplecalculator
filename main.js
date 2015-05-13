@@ -27,14 +27,14 @@ function multiply() {
   answer.innerHTML = sum.toString();
 }
 
-function divide() {
-  var numOne = Number(inputOne.value);
-  var numTwo = Number(inputTwo.value);
-  var sum = numOne / numTwo;
-  answer.innerHTML = sum.toString();
-}
+// function divide() {
+//   var numOne = Number(inputOne.value);
+//   var numTwo = Number(inputTwo.value);
+//   var sum = numOne / numTwo;
+//   answer.innerHTML = sum.toString(sum.value);
+// }
 
 additionBtn.addEventListener("click", add);
 subtractionBtn.addEventListener("click", subtract);
 multiplicationBtn.addEventListener("click", multiply);
-divisionBtn.addEventListener("click", divide);
+// divisionBtn.addEventListener("click", divide);
