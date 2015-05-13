@@ -14,7 +14,7 @@ function add() {
 }
 
 function subtract() {
-  var numOne = Number(inputOne.value);
+  var numOne = Numgber(inputOne.value);
   var numTwo = Number(inputTwo.value);
   var sum = numOne - numTwo;
   answer.innerHTML = sum.toString();
